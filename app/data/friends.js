@@ -7,19 +7,70 @@
 
 var friendArray = [
     {
-        "name":"Ahmed",
+        "name":"Leon",
+        "photo":"https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
+        "scores":[
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ]
+      },
+
+      {
+        "name":"Pris",
+        "photo":"https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
+        "scores":[
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ]
+      },
+
+      {
+        "name":"Roy Batty",
+        "photo":"https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
+        "scores":[
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3
+          ]
+      },
+
+      {
+        "name":"Rachel",
         "photo":"https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
         "scores":[
             5,
-            1,
-            4,
-            4,
             5,
-            1,
-            2,
             5,
-            4,
-            1
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            
           ]
       }
   ];
