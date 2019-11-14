@@ -33,25 +33,62 @@
     max-width: 90%;
     max-height: 90%;
 }
+
+body {
+    background-color: black;
+    color:blueviolet;
+    font-family: 'Ubuntu', sans-serif;
+  }
+  .colorer {
+    background-color: rgb(56, 56, 56);
+  }
+
+  label {
+  display: flex;
+  flex-direction: row;
+
+  text-align: left;
+  
+  line-height: 26px;
+  margin-bottom: 10px;
+}
+
+input {
+  height: 20px;
+  flex: 0 0 200px;
+  margin-left: 10px;
+}
+
+.con-cent {
+  text-align: center;
+}
+.pad {
+  padding: 10px;
+}
+
+.butt-con {
+  text-align:center;
+  padding: 20px 0px 40px 0px;
+}
   </style>
   <body>
     <div class="container">
       <div class="row">
         <div class="col-12">
-          <div class="card">
+          <div class="card colorer">
             <div class="card-header">
-              <h3><strong>WHO THE FRIEND ARE YOU?</strong></h3>
+              <h3><strong>Please Register</strong></h3>
             </div>
             <div class="card-body">
               <form method="POST" role="form">
                 <div class="form-group">
                   <label for="name">Name</label>
-                  <input type="text" class="form-field" id="name" />
+                  <input type="text" class="form-field" id="name" size="50"/>
                 </div>
 
                 <div class="form-group">
-                  <label for="link">Link to Photo (not required)</label>
-                  <input type="text" class="form-field" id="link" />
+                  <label for="link">Link to Photo</label>
+                  <input type="text" class="form-field" id="link" maxlength="100" size="50" />
                 </div>
               </form>
               <br />
@@ -62,8 +99,10 @@
       </div>
     </div>
     <div class="container">
-			<h2>Survey Questions</h2>
-      		<div class="row">
+      <div class="con-cent">
+        <h1><img src="https://img.icons8.com/office/48/000000/iris-scan.png">Van-Huynh-Voigt-Kampff<img src="https://img.icons8.com/office/48/000000/iris-scan.png"></h1>
+      </div>
+      		<div class="row pad">
             <div class="col-md-12">
             
       			<h4>Question 1</h4>
@@ -80,7 +119,7 @@
             
             </div>
       		</div>
-      		<div class="row">
+      		<div class="row pad">
             <div class="col-md-12">
       			<h4>Question 2</h4>
       			<h5>Your're at a friends house and meeting their family for the first time. Her little boy proudly shows you his butterfly collection. Then, with an equal amount of beaming pride, he shows you the killing jar he used to make it. How do you react?</h5>
@@ -96,7 +135,7 @@
             
             </div>
 				  </div>
-				  <div class="row">
+				  <div class="row pad">
             <div class="col-md-12">
       			<h4>Question 3</h4>
       			<h5>You're at home after a long day at work. You're watching your favorite television program. Suddenly, your attention is stolen by an itching sensation at your wrist. Upon further investigation, you find a wasp crawling across your sweater-clad appendage, toward the soft, exposed skin of your right hand. What is your first impulse?</h5>
@@ -112,7 +151,7 @@
             
             </div>
 				  </div>
-				  <div class="row">
+				  <div class="row pad">
             <div class="col-md-12">
       			<h4>Question 4</h4>
       			<h5>You're enjoying a relaxing day at home with your partner. While looking at a magazine, you notice that they take a particular interest in a set of photographs featuring one particular model. On a later date, you visit your partners home and discover that your partner had liked the photo series so much that they decided to have the pictures frammed. Then, they had the pictures strategically hung up around their home to maximize veiwing potential. How does this make you feel?</h5>
@@ -128,7 +167,7 @@
             
             </div>
 				  </div>
-				  <div class="row">
+				  <div class="row pad">
             <div class="col-md-12">
       			<h4>Question 5</h4>
       			<h5>You're at home watching an old movie on your day off. In the film, there is a large banquette taking place. The characters start off with an appetizer of oysters, and the meal progresses until they end up consuming an entree that consists primarily of boiled dog. To you, the dish of oysters is less acceptable than the boiled dog. What does this make you feel inside?</h5>
@@ -144,7 +183,7 @@
             
             </div>
 				  </div>
-				  <div class="row">
+				  <div class="row pad">
             <div class="col-md-12">
       			<h4>Question 6</h4>
       			<h5>Generally, you consider yourself an organized person. Today, you're having a party. The guest list includes a group of your close friends, with whom you're intimately familiar, but also a segment of professional acquaintances with whom you're realtionship has remained mostly superficial. The first guest is set to arrive in minutes, and despite your usual dillagence towards organization, your home is in an  amount of disarray that you feel to be a misrepresentation of your character. How will you greet your first guest?</h5>
@@ -160,7 +199,7 @@
             
             </div>
 				  </div>
-				  <div class="row">
+				  <div class="row pad">
             <div class="col-md-12">
       			<h4>Question 7</h4>
       			<h5>Speaking broadly, you often describe yourself as a person that enjoys helping other people. On this particular night, you find yourself out with a group of your peers, socially drinking, and everyone seems to be having a lovely time. In a whimsical move of merry making, you offer to buy a round of drinks for the entire cohort, at another bar located down the street. As you set out upon your way, a man that appears to be homeless approaches you. It is apparent that this man has been taking drugs, and he casually asks you for money while blowing cigarette smoke into your face. Your first urges are that off?</h5>
@@ -176,7 +215,7 @@
             </div>
           
 				  </div>
-				  <div class="row">
+				  <div class="row pad">
             <div class="col-md-12">
       			<h4>Question 8</h4>
       			<h5>When you're feeling sad, you just want to be left alone. A distant relative that was estranged from most of your family, but remained close to you throughout your life, has recently passed away after a long struggle with a terminal disease. In your time of mourning, Much of the legal responsibilities and death-rituals have been shifted onto you, despite your distance from the departed's immediate family. Addtionally, other family members have begun to seek solace in your familiarity with the deceased, often lementing their foregone opportunity to make their own personal connections. How do you respond to them?</h5>
@@ -192,7 +231,7 @@
             
             </div>
 				  </div>
-				  <div class="row">
+				  <div class="row pad">
             <div class="col-md-12">
       			<h4>Question 9</h4>
       			<h5>People rarely make you angry. You've been tasked with training a new employee at your work. Despite the fact that this person was hired as your peer, you were not included in the hiring process. It quckly becomes apparent that this new employee lacks even an elementary understanding of the occupation for which they were hired. When you express your frustrations to your manager, your manager responds by emphasizing their own abilities to recognize great potential in employees, while implying that you lack the ability to interact socially with other coworkers. Your first response is one of?</h5>
@@ -208,7 +247,7 @@
             
             </div>
 				  </div>
-				  <div class="row">
+				  <div class="row pad">
       			<h4>Question 10</h4>
       			<h5>You generally stay relaxed under pressure. So when you were asked to speak at an anual conference that is managed by an elite group of your intellectual peers, the prospect of public speaking didn't bother you. You were not even concerned with the fact that some of the most advanced minds in your field would be attending. In the weeks leading up to the event, you practiced often. The morning of, you awoke early and left your home with more than enough time to make your time slot. However, despite your best efforts, a terrible accident has produced a traffic delay so long that begin to slowly realize that you will miss your engagement and the remainder of the days social events as well. As your presentation time approaches, your phone begins to ring with calls and vibrate with messages. How do you explain your situation?</h5>
       		  
@@ -223,13 +262,13 @@
             
             </div>
 				  </div>
-			    <div class="text-right">
+			    <div class="butt-con">
             <button
               type="submit"
-              class="btn btn-primary btn-md"
+              class="btn btn-danger btn-lg"
               id="add-btn"
             >
-              <span class="fa fa-fire"></span>Are you even friend, bruh?
+              <span class="fa fa-eye"></span> Submit
             </button>
           </div>
     		</form>
