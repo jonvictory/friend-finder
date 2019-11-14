@@ -14,8 +14,26 @@
     />
     <script src="https://code.jquery.com/jquery.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-    
+
+    <link rel="stylesheet" type="text/css" href="style.css">
   </head>
+
+  <style>
+    .con-img {
+    height: 100%;
+    width: 100%;
+    border-width: 20px;
+    border-style: solid;
+    border-color: red;
+    text-align: center;
+
+}
+
+.match-img {
+    max-width: 90%;
+    max-height: 90%;
+}
+  </style>
   <body>
     <div class="container">
       <div class="row">
@@ -223,21 +241,25 @@
 
             <!-- Modal content-->
             <div class="modal-content">
-                <div class="modal-header">
+                <div class="container">
+                  <div class="row">
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                     <h2 class="modal-title">
                         <strong>Best Match</strong>
                     </h2>
                 </div>
-                <div class="modal-body">
+              </div>
+                <div class="container">
                     <h2 id="match-name"></h2>
-                    <img id="match-img" src="" alt="">
+                    <div class="con-img">
+                    <img class="match-img" id="match-img" src="" alt="">
+                  </div>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                 </div>
             </div>
-
+          </div>
         </div>
     </div>
 

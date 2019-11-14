@@ -8,7 +8,7 @@
 var friendArray = [
     {
         "name":"Leon",
-        "photo":"https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
+        "photo":"https://vignette.wikia.nocookie.net/bladerunner/images/1/18/Leon.jpg/revision/latest?cb=20190601154225",
         "scores":[
             1,
             1,
@@ -25,7 +25,7 @@ var friendArray = [
 
       {
         "name":"Pris",
-        "photo":"https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
+        "photo":"https://i.pinimg.com/originals/5a/8a/6d/5a8a6de55a443c04216fea42eb4d5df0.jpg",
         "scores":[
             2,
             2,
@@ -42,7 +42,7 @@ var friendArray = [
 
       {
         "name":"Roy Batty",
-        "photo":"https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
+        "photo":"https://i.ytimg.com/vi/JdUq2opPY-Q/maxresdefault.jpg",
         "scores":[
             3,
             3,
@@ -59,7 +59,7 @@ var friendArray = [
 
       {
         "name":"Rachel",
-        "photo":"https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
+        "photo":"http://images5.fanpop.com/image/photos/31000000/Rachael-blade-runner-31078090-841-1280.jpg",
         "scores":[
             5,
             5,
