@@ -13,28 +13,12 @@ var friends = require("../data/friends");
 // ===============================================================================
 
 module.exports = function(app) {
-  // API GET Requests
-  // Below code handles when users "visit" a page.
-  // In each of the below cases when a user visits a link
-  // (ex: localhost:PORT/api/admin... they are shown a JSON of the data in the table)
-  // ---------------------------------------------------------------------------
 
   app.get("/api/friends", function(req, res) {
     res.json(friends);
   });
 
-  // API POST Requests
-  // Below code handles when a user submits a form and thus submits data to the server.
-  // In each of the below cases, when a user submits form data (a JSON object)
-  // ...the JSON is pushed to the appropriate JavaScript array
-  // (ex. User fills out a reservation request... this data is then sent to the server...
-  // Then the server saves the data to the friends array)
-  // ---------------------------------------------------------------------------
-
   app.post("/api/friends", function(req, res) {
-    // Note the code here. Our "server" will respond to requests and let users know if they have a table or not.
-    // It will do this by sending out the value "true" have a table
-    // req.body is available since we're using the body parsing middleware
 
     var bestMatch = {
       name: "",
@@ -42,26 +26,26 @@ module.exports = function(app) {
       friendDifference: 1000
   };
 
-  // To take the result of the user's survey POST and parse it
+  // parsing survey results
   var currUser = req.body;
   var userScores = currUser.scores;
-  // To take the results of the user's name and photo, other than the survey questions, to post and parse it
+  // obtaining user submitted info, processing, posting
   var userName = currUser.name;
   var userPhoto = currUser.photo;
 
-  // The variable used to calculate the difference b/n the user's socres and the scores of each user
+  // holder variable for checking user scores against each other
   var totalDifference = 0;
 
-  //loop through the friends data array of objects to get each friends scores
+  //loop through the friends array to get each friend's scores
   for (var i = 0; i < friends.length - 1; i++) {
       console.log(friends[i].name);
       totalDifference = 0;
 
-      //loop through that friends score and the users score and calculate the absolute difference between the two and push that to the total difference variable set above
+      //loop through individual scores then, the user's score to calculate the absolute difference and push to the total difference variable 
       for (var j = 0; j < 10; j++) {
-          // We calculate the difference between the scores and sum them into the totalDifference
+          // calculate the difference between the scores, then sum them into the totalDifference
           totalDifference += Math.abs(parseInt(userScores[j]) - parseInt(friends[i].scores[j]));
-          // If the sum of differences is less then the differences of the current "best match"
+          // handle if the sum of differences is less then the differences of the current "best match"
           if (totalDifference <= bestMatch.friendDifference) {
 
               // Reset the bestMatch to be the new friend. 
@@ -72,17 +56,16 @@ module.exports = function(app) {
       }
   }
 
-  // The push method use to save user's data to the database
+  // The push method for saving user's data to the database
   friends.push(currUser);
 
-  //The res.json method will return a JSON data with the user's match which was looped through frieds data array. 
+  //The res.json method will return JSON data with the user's match. 
   res.json(bestMatch);
 });
     
 
   // ---------------------------------------------------------------------------
-  // I added this below code so you could clear out the table while working with the functionality.
-  // Don"t worry about it!
+  // useful relic from class resturant exercise
 
 
       // Empty out the arrays of data
